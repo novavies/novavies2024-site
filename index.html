@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ja" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova vies. | 仙台発の卓球コミュニティブランド</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Noto+Sans+JP:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { light: '#D4AF37', DEFAULT: '#B8960C', dark: '#8B7200' },
+            noir: { DEFAULT: '#0A0A0A', light: '#1A1A1A', lighter: '#2A2A2A' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .font-heading { font-family: 'Cormorant Garamond', serif; }
+    .font-body { font-family: 'Noto Sans JP', sans-serif; }
+    .gold-gradient { background: linear-gradient(135deg, #D4AF37, #F4E28D, #B8960C); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .gold-border { border-image: linear-gradient(135deg, #D4AF37, #B8960C) 1; }
+    .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg { background: radial-gradient(ellipse at 50% 0%, #1A1A1A 0%, #0A0A0A 70%); }
+    .gold-line { height: 1px; background: linear-gradient(90deg, transparent, #D4AF37, transparent); }
+    .btn-gold { background: linear-gradient(135deg, #D4AF37, #B8960C); color: #0A0A0A; font-weight: 700; transition: all 0.3s; }
+    .btn-gold:hover { background: linear-gradient(135deg, #F4E28D, #D4AF37); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(212,175,55,0.3); }
+    .timeline-dot { width: 12px; height: 12px; background: #D4AF37; border-radius: 50%; box-shadow: 0 0 12px rgba(212,175,55,0.5); }
+    html { scroll-behavior: smooth; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ <script src="/_sdk/telemetry_sdk.js"></script></head>
+ <body class="h-full font-body bg-noir text-white overflow-auto">
+  <div class="w-full min-h-full"><!-- Navigation -->
+   <nav class="fixed top-0 w-full z-50 bg-noir/90 backdrop-blur-md border-b border-gold-dark/20">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"><span class="font-heading text-2xl font-bold gold-gradient">Nova vies.</span>
+     <div class="hidden md:flex gap-8 text-sm text-gray-400"><a href="#concept" class="hover:text-gold-light transition">CONCEPT</a> <a href="#activities" class="hover:text-gold-light transition">ACTIVITIES</a> <a href="#results" class="hover:text-gold-light transition">RESULTS</a> <a href="#recruit" class="hover:text-gold-light transition">RECRUIT</a> <a href="#contact" class="hover:text-gold-light transition">CONTACT</a>
+     </div>
+    </div>
+   </nav><!-- Hero -->
+   <section class="hero-bg relative flex items-center justify-center min-h-[100%] pt-20 px-6">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 20% 50%, #D4AF37 1px, transparent 1px), radial-gradient(circle at 80% 20%, #D4AF37 1px, transparent 1px); background-size: 100px 100px;"></div>
+    <div class="relative text-center max-w-4xl mx-auto py-20">
+     <p class="text-gold-light text-sm tracking-[0.3em] mb-8 font-light">SENDAI TABLE TENNIS COMMUNITY BRAND</p>
+     <h1 id="main-copy" class="font-heading text-3xl md:text-5xl lg:text-6xl font-light leading-tight mb-8" style="color: #F4E28D;">卓球を通じて人生をもっと豊かに、<br>
+       もっとオシャレに。</h1>
+     <p id="sub-copy" class="text-gray-300 text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-2">競技レベルや年齢を超えて、<br>
+       人と人がつながる。</p>
+     <p class="text-gray-400 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">Nova vies.は仙台を拠点に活動する<br>
+       卓球コミュニティです。</p>
+     <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center"><a href="https://p4match.com/" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block px-10 py-4 rounded text-sm tracking-wider">P4MATCHを見る</a><a href="https://lin.ee/nIVmhXB" target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-4 rounded text-sm tracking-wider border border-gold-light text-gold-light hover:bg-gold-light/10 transition">公式LINEへ</a>
+     </div>
+    </div>
+   </section><!-- Concept -->
+   <section id="concept" class="py-24 px-6 fade-in">
+    <div class="max-w-4xl mx-auto">
+     <p class="text-gold-light text-xs tracking-[0.3em] mb-3">CONCEPT</p>
+     <h2 id="concept-title" class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">人とのつながりから、新しい可能性を。</h2>
+     <div class="gold-line w-20 mt-6 mb-10"></div>
+     <div class="text-gray-300 leading-loose space-y-6 text-sm md:text-base">
+      <p>Nova vies.（ノヴァ ヴィエス）は<br>
+        仙台を拠点に活動する卓球チームです。</p>
+      <p>Novaは「革新・新しい可能性」<br>
+        viesは「人生・生き方」<br><br>
+        という意味があります。</p>
+      <p>私たちは卓球を通じて人と人をつなぎ、新しい出会いや挑戦のきっかけを生み出すことで、それぞれの人生をより豊かにすることを目指しています。</p>
+      <p>勝敗だけではなく、仲間とのつながりや成長する楽しさも大切にしています。</p>
+      <p class="text-gold-light font-medium">現在は学生から社会人まで約30名が所属しています。</p>
+     </div>
+    </div>
+   </section><!-- History -->
+   <section class="py-24 px-6 bg-noir-light fade-in">
+    <div class="max-w-4xl mx-auto">
+     <p class="text-gold-light text-xs tracking-[0.3em] mb-3">HISTORY</p>
+     <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">一歩ずつ、着実に。</h2>
+     <div class="gold-line w-20 mt-6 mb-10"></div>
+     <p class="text-gray-400 mb-12 text-sm">洗練されたカルチャーを体現しながら、私たちは確実に結果を積み重ねてきました。</p>
+     <div class="space-y-6 relative pl-8 border-l border-gold-dark/30">
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2024.07</span><span class="text-gray-400 ml-4">Nova vies. 発足</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2024.10</span><span class="text-gray-400 ml-4">P4MATCH運営参入</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2025.01</span><span class="text-gray-400 ml-4">女子チーム始動</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2025.04</span><span class="text-gray-400 ml-4">男女ともに仙台市リーグ参入</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2026.02</span><span class="text-gray-400 ml-4">卓球ラウンジNOA様とスポンサー契約締結</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2026.04</span><span class="text-gray-400 ml-4">男子：全日本クラブ選手権 宮城県代表権獲得</span></p>
+      </div>
+      <div class="relative">
+       <div class="timeline-dot absolute -left-[26px] top-1"></div>
+       <p class="text-sm"><span class="text-gold-light font-medium">2026.05</span><span class="text-gray-400 ml-4">女子：新日本スポーツ連盟全国卓球選手権 宮城県代表権獲得</span></p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Summary after Results -->
+   <section class="py-12 px-6 fade-in">
+    <div class="max-w-4xl mx-auto text-center">
+     <p class="text-gray-300 text-sm leading-relaxed">発足からまだ若いチームですが、<br>
+       メンバーが1人ひとりの挑戦によって<br>
+       着実に結果を積み重ねています。</p>
+    </div><!-- Activities -->
+    <section id="activities" class="py-24 px-6 fade-in">
+     <div class="max-w-5xl mx-auto">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">ACTIVITIES</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">卓球を楽しみながら、それぞれの目標へ。</h2>
+      <div class="gold-line w-20 mt-6 mb-10"></div>
+      <p class="text-gray-400 mb-12 text-sm leading-relaxed">Nova vies.では週1〜3回、仙台市内の市民センターや体育館を中心に活動しています。<br><br>
+        レベルアップを目指す選手も、仲間との交流を楽しみたい方も、それぞれの目標に合わせて活動しています。</p>
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+       <div class="bg-noir-lighter border border-gold-dark/20 rounded-lg p-8 hover:border-gold-light/40 transition"><i data-lucide="Users2" class="text-gold-light mb-4" style="width:32px;height:32px;"></i>
+        <h3 class="font-heading text-xl mb-3 text-white">定期練習会</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">週1〜3回の練習会でスキルアップ。</p>
+       </div>
+       <div class="bg-noir-lighter border border-gold-dark/20 rounded-lg p-8 hover:border-gold-light/40 transition"><i data-lucide="trophy" class="text-gold-light mb-4" style="width:32px;height:32px;"></i>
+        <h3 class="font-heading text-xl mb-3 text-white">公式戦・リーグ戦</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">宮城県代表として全国の舞台へ。</p>
+       </div>
+       <div class="bg-noir-lighter border border-gold-dark/20 rounded-lg p-8 hover:border-gold-light/40 transition"><i data-lucide="Zap" class="text-gold-light mb-4" style="width:32px;height:32px;"></i>
+        <h3 class="font-heading text-xl mb-3 text-white">P4MATCHの運営</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">初心者から上級者まで楽しめる大会。</p>
+       </div>
+       <div class="bg-noir-lighter border border-gold-dark/20 rounded-lg p-8 hover:border-gold-light/40 transition"><i data-lucide="Heart" class="text-gold-light mb-4" style="width:32px;height:32px;"></i>
+        <h3 class="font-heading text-xl mb-3 text-white">メンバー同士の交流</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">年齢や職業を超えた仲間との絆。</p>
+       </div>
+      </div>
+      <p class="text-gray-400 text-sm text-center">卓球を通じて成長できる環境づくりを大切にしています。</p>
+     </div>
+    </section><!-- Results -->
+    <section id="results" class="py-24 px-6 bg-noir-light fade-in">
+     <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">RESULTS</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">創設から2年で全国大会へ。</h2>
+      <div class="gold-line w-20 mt-6 mb-10 mx-auto"></div>
+      <p class="text-gray-400 mb-12 text-sm">高い志を持ったメンバーが集うことで、創設間もないチームながら、宮城県トップクラスの実績を残しています。</p>
+      <div class="grid md:grid-cols-2 gap-8">
+       <div class="border border-gold-dark/30 rounded-lg p-8 bg-noir">
+        <p class="text-gold-light text-xs tracking-wider mb-4">MEN'S TEAM</p>
+        <h3 class="font-heading text-lg text-white mb-2">全日本クラブ選手権大会</h3>
+        <p class="text-gold-light font-medium">宮城県代表権獲得</p>
+        <p class="text-gray-500 text-xs mt-2">2026年4月</p>
+       </div>
+       <div class="border border-gold-dark/30 rounded-lg p-8 bg-noir">
+        <p class="text-gold-light text-xs tracking-wider mb-4">WOMEN'S TEAM</p>
+        <h3 class="font-heading text-lg text-white mb-2">新日本スポーツ連盟全国卓球選手権大会</h3>
+        <p class="text-gold-light font-medium">宮城県代表権獲得</p>
+        <p class="text-gray-500 text-xs mt-2">2026年5月</p>
+       </div>
+      </div>
+     </div>
+    </section><!-- Leader -->
+    <section class="py-24 px-6 fade-in">
+     <div class="max-w-4xl mx-auto">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">LEADER</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">実績と情熱が、コミュニティを牽引する。</h2>
+      <div class="gold-line w-20 mt-6 mb-10"></div>
+      <div class="md:flex gap-12 items-start">
+       <div class="w-48 h-48 rounded-full bg-noir-lighter border-2 border-gold-dark/40 flex items-center justify-center mb-8 md:mb-0 flex-shrink-0 mx-auto md:mx-0 overflow-hidden">
+  <img
+  src="./IMG_7101.png"
+  alt="坂本 瑛希"
+  loading="lazy"
+  class="w-full h-full object-cover"
+  >
+       </div>
+       <div>
+        <h3 class="font-heading text-2xl text-white mb-1">坂本 瑛希 <span class="text-sm text-gray-500">Haruki Sakamoto</span></h3>
+        <p class="text-gold-light text-sm mb-4">Nova vies. 代表</p>
+        <p class="text-gray-400 text-sm mb-4">秋田県出身 ｜ 秋田高校 → 東北学院大学</p>
+        <div class="mb-6">
+         <p class="text-xs text-gold-light tracking-wider mb-2">ACHIEVEMENTS</p>
+         <ul class="text-gray-400 text-sm space-y-1">
+          <li>• 全日本カデット出場 4回</li>
+          <li>• 東京選手権出場</li>
+          <li>• 東北学生ランカー 2回</li>
+          <li>• 東北学生会長杯 ベスト8</li>
+         </ul>
+        </div>
+        <blockquote class="border-l-2 border-gold-dark pl-4 text-gray-300 text-sm italic leading-relaxed">
+         「卓球は、人生をデザインするツールである。私たちが目指すのは、誰もが自分自身の可能性に挑戦できる、最高にスタイリッシュな環境です」
+        </blockquote>
+       </div>
+      </div>
+     </div>
+    </section><!-- P4MATCH -->
+    <section class="py-24 px-6 bg-noir-light fade-in">
+     <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">P4MATCH</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">誰もが輝ける、新しい大会のカタチ。</h2>
+      <div class="gold-line w-20 mt-6 mb-10 mx-auto"></div>
+      <p class="text-gray-300 text-sm leading-loose max-w-2xl mx-auto mb-8">Nova vies.ではP4MATCHの運営にも携わっています。<br><br>
+        レベルの近い選手同士で試合ができるため、初心者から上級者まで楽しみながら挑戦できる大会です。</p>
+      <p class="text-gold-light text-lg font-heading">「今の自分の実力を試したい」<br><br>
+        そんな方におすすめです。</p>
+     </div>
+    </section><!-- Recruit -->
+    <section id="recruit" class="py-24 px-6 fade-in">
+     <div class="max-w-4xl mx-auto">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">RECRUIT</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">共に、新しい景色を見に行こう。</h2>
+      <div class="gold-line w-20 mt-6 mb-10"></div>
+      <p class="text-gray-300 text-sm leading-loose mb-10">Nova vies.では、共にチームの未来を創り、自身の人生を豊かにしたい新規メンバーを募集しています。<br><br>
+        学生・社会人問わず、一緒に活動していただけるメンバーを募集しています。</p>
+      <p class="text-gray-400 text-sm leading-loose mb-8">まずは練習会に参加していただき、チームの雰囲気を知っていただいた上で正式加入をご相談いただいております。</p>
+      <div class="bg-noir-lighter border border-gold-dark/20 rounded-lg p-8">
+       <p class="text-gold-light text-xs tracking-wider mb-6">JOIN PROCESS</p>
+       <div class="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8">
+        <div class="flex items-center gap-3">
+         <span class="w-8 h-8 rounded-full bg-gold-dark/20 flex items-center justify-center text-gold-light text-sm font-bold">1</span><span class="text-gray-300 text-sm">練習会・体験へのご参加</span>
+        </div><i data-lucide="chevron-right" class="hidden md:block text-gold-dark" style="width:16px;height:16px;"></i>
+        <div class="flex items-center gap-3">
+         <span class="w-8 h-8 rounded-full bg-gold-dark/20 flex items-center justify-center text-gold-light text-sm font-bold">2</span><span class="text-gray-300 text-sm">方向性の確認・ご相談</span>
+        </div><i data-lucide="chevron-right" class="hidden md:block text-gold-dark" style="width:16px;height:16px;"></i>
+        <div class="flex items-center gap-3">
+         <span class="w-8 h-8 rounded-full bg-gold-dark/20 flex items-center justify-center text-gold-light text-sm font-bold">3</span><span class="text-gray-300 text-sm">正式加入</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section><!-- Partnership -->
+    <section class="py-24 px-6 bg-noir-light fade-in">
+     <div class="max-w-4xl mx-auto">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">PARTNERSHIP</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">共創パートナーという、未来への投資。</h2>
+      <div class="gold-line w-20 mt-6 mb-10"></div>
+      <p class="text-gray-300 text-sm leading-loose">Nova vies.では活動を応援していただける企業様・個人様を募集しています。<br><br>
+        大会運営やチーム活動を通じて、地域スポーツの発展に貢献していきたいと考えています。</p>
+      <p class="text-gray-400 text-sm leading-loose mt-4">ご興味をお持ちいただけましたらぜひお気軽にお問い合わせください。</p>
+     </div>
+    </section><!-- Contact -->
+    <section id="contact" class="py-24 px-6 fade-in">
+     <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gold-light text-xs tracking-[0.3em] mb-3">CONTACT</p>
+      <h2 class="font-heading text-3xl md:text-4xl font-light mb-4 gold-gradient inline-block">まずはお気軽にご連絡ください。</h2>
+      <div class="gold-line w-20 mt-6 mb-10 mx-auto"></div>
+      <p class="text-gray-400 text-sm mb-12">練習会参加、P4MATCHについて、チーム加入、スポンサー・協賛のご相談など、<br>
+        下記よりお気軽にご連絡ください。</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center"><a href="https://lin.ee/nIVmhXB" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block px-10 py-4 rounded text-sm tracking-wider flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" viewbox="0 0 24 24" fill="currentColor">
+         <path d="M19.365 9.863c.349-1.396.349-3.434 0-5.831-.155-1.227-.773-2.386-1.829-3.056C16.503.434 14.152.25 12 2.187 9.848.25 7.497.434 6.464 1.089 5.408 1.759 4.79 2.918 4.635 4.145c-.349 2.397-.349 4.435 0 5.831.155 1.227.773 2.387 1.829 3.056 1.033.655 2.384.84 4.536-1.097 2.152 1.937 3.503 1.752 4.536 1.097 1.056-.669 1.674-1.829 1.829-3.056z" />
+        </svg>公式LINE</a><a href="https://www.instagram.com/novavies.2024/" target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-4 rounded text-sm tracking-wider border border-gold-light text-gold-light hover:bg-gold-light/10 transition flex items-center justify-center gap-2"><i data-lucide="Instagram" style="width:18px;height:18px;"></i>Instagram</a>
+      </div>
+     </div>
+    </section><!-- Footer -->
+    <footer class="py-12 px-6 border-t border-gold-dark/10 text-center"><span class="font-heading text-xl gold-gradient">Nova vies.</span>
+     <p class="text-gray-600 text-xs mt-3">© 2024 Nova vies. All Rights Reserved.</p>
+    </footer>
+   </section>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_copy: '卓球を通じて人生をもっと豊かに、もっとオシャレに。',
+      sub_copy: '競技の枠を超え、新たな可能性を紡ぐ\n仙台発の卓球コミュニティブランド。',
+      background_color: '#0A0A0A',
+      surface_color: '#1A1A1A',
+      text_color: '#FFFFFF',
+      accent_color: '#D4AF37',
+      secondary_action_color: '#8B7200',
+      font_family: 'Cormorant Garamond',
+      font_size: 16
+    };
+
+    async function initApp() {
+      // Scroll animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      lucide.createIcons();
+
+      if (window.elementSdk) {
+        window.elementSdk.init({
+          defaultConfig,
+          onConfigChange: async (config) => {
+            const mc = document.getElementById('main-copy');
+            const sc = document.getElementById('sub-copy');
+            if (mc) mc.textContent = config.main_copy || defaultConfig.main_copy;
+            if (sc) sc.innerHTML = (config.sub_copy || defaultConfig.sub_copy).replace(/\n/g, '<br>');
+
+            const font = config.font_family || defaultConfig.font_family;
+            document.querySelectorAll('.font-heading').forEach(el => { el.style.fontFamily = `${font}, serif`; });
+            if (mc) mc.style.fontFamily = `${font}, serif`;
+
+            const base = config.font_size || defaultConfig.font_size;
+            document.body.style.fontSize = `${base}px`;
+          },
+          mapToCapabilities: (config) => ({
+            recolorables: [
+              { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+              { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+              { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+              { get: () => config.accent_color || defaultConfig.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+              { get: () => config.secondary_action_color || defaultConfig.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+            ],
+            borderables: [],
+            fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); } },
+            fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); } }
+          }),
+          mapToEditPanelValues: (config) => new Map([
+            ['main_copy', config.main_copy || defaultConfig.main_copy],
+            ['sub_copy', config.sub_copy || defaultConfig.sub_copy]
+          ])
+        });
+      }
+    }
+
+    initApp();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0892d627df221b5',t:'MTc4MDkzNTEzNw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

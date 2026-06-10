@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://novavies.github.io/novavies2024-site/sitemap.xml
